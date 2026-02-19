@@ -1,0 +1,93 @@
+    .flag {
+      width: 32px;
+      height: 32px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+        width: 700px; /* Set your desired width */
+        height: 500px; /* Set your desired height */
+    }
+
+    #proxy-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      width: calc(20% - 10px);
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: left;
+      background-color: #4ffd4f0f;
+    }
+
+    button img {
+      margin-right: 10px;
+    }
+
+    .selected {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .blurred {
+      filter: blur(1.5px);
+      background-color: #ff00000d;
+    }
+
+
+    button:not(:disabled):hover {
+        background-color: #84fd8491 ;
+    }  
+
+
+
+        .offer-banner {
+            background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة */
+            position: fixed; /* تجعل العنصر ثابتاً في مكانه */
+            top: 50%; /* توسيط عمودي */
+            left: 50%; /* توسيط أفقي */
+            transform: translate(-50%, -50%); /* توسيط باستخدام transform */
+            padding: 30px;
+            width: 70%; /* زيادة العرض */
+            max-width: 800px; /* أقصى عرض */
+            text-align: center;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            z-index: 1000; /* يجعل العنصر فوق جميع العناصر الأخرى */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+        }
+        .offer-banner h2 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #343a40;
+        }
+        .offer-banner p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            color: #6c757d;
+        }
+        .offer-banner a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .offer-banner a:hover {
+            background-color: #218838;
+        }
